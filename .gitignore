@@ -1,0 +1,19 @@
+# MacOS-specifika filer
+.DS_Store
+
+# Loggfiler
+*.log
+
+# Node.js-moduler (om du använder npm eller Yarn)
+node_modules/
+
+# Byggmappar (t.ex., Webpack, Vite, etc.)
+dist/
+build/
+
+# Cache-filer
+.cache/
+
+# Miljöfiler
+.env
+.env.local
