@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bildarkivet</title>
+        <link rel="icon" href="./favicon.png" sizes="48x48" type="image/png">
+        <!-- Importerar googles ikon-bibliotek -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+        <link href="https://fonts.cdnfonts.com/css/darkmode-trial" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Skip to main content-länk, finns på alla sidor -->
+        <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+        <header>
+            <div class="logo-container" id="top">
+                <a href="index.html#top">
+                    <img alt="Bildarkivet logotype" src="./assets/logo.png" class="logo">
+                </a>
+            </div>
+            <!-- top -->
+            <nav class="top-menu">
+                <!-- En knapp med hamburger-meny-ikon för compact view, vinns på alla sidor -->
+                <div class="top-menu-button-container">
+                    <button aria-controls="menu" 
+                        aria-expanded="false" 
+                        aria-label="Öppna eller stäng menyn"
+                        class="top-menu-button" id="menu-toggle">
+                        <span id="button-toggle" class="material-symbols-outlined menu">menu</span>
+                        <span class="button-text">Meny</span>
+                    </button>
+                </div>
+                <!-- Meny-länk-panel, finns på alla sidor. Olika style mellan desktopvy och compact view -->
+                <ul class="top-menu-list menu-dropdown" id="menu">
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="index.html">
+                            <span class="material-symbols-outlined home">home</span>
+                            <span class="top-menu-text">Hem</span>
+                        </a>
+                    </li>
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="selection.html">Ett urval</a>                    
+                  </li>
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="street.html">Street</a>
+                    </li>
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="cities.html">Städer</a>
+                    </li>
+                    <li class="top-menu-item">
+                        <span class="top-menu-link selected">Om arkivet</span>
+                    </li>
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="tip.html">Inspiration</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content" class="main-content-area main-content-area--center">
+            <section class="photo-page-content">
+                <h1>Om arkivet</h1>
+                <figure class="about-image">
+                    <img src="./assets/bildgalleriet.png" alt="Bild på bilarkivets lagerlokal">
+                </figure>
+                <h2>Välkommen till Bildgalleriet, sajten där konst och verklighet blandas på nya sätt..</h2>
+                    <p class="ingress">
+                        Vi lever i en tid där konst ständigt utvecklas och där gränsen mellan det verkliga och det 
+                        digitala blir allt suddigare. Med hjälp av teknologi och kreativt tänkande skapar konstnärer 
+                        verk som inte bara är visuellt imponerande utan också tankeväckande och ofta ifrågasättande.
+                        <br>Det är här vi kommer in.
+                    </p>
+                    <p>
+                        På Bildgalleriet presenterar vi ett digitalt galleri som utmanar din uppfattning om vad konst 
+                        är och kan vara. Våra verk är både innovativa och djupgående, skapade för att väcka frågor om vår samtid, 
+                        vår relation till teknologi och vår uppfattning om verklighet och illusion. 🎨✨
+                    </p>
+                    <p>
+                        Vårt mål är inte att förvirra, utan att få dig att tänka djupare. Genom att utforska våra utställningar 
+                        vill vi att du ska börja ställa frågor som:
+                    </p>
+                    <ul>
+                        <li>Vad är konstens syfte i dagens samhälle?</li>
+                        <li>Hur påverkar digitalisering och teknologi vår uppfattning om konst?</li>
+                        <li>Hur kan vi tolka och förstå konst på ett nytt sätt i en snabbt föränderlig värld?</li>
+                    </ul>
+                    <p>
+                        Så nästa gång du besöker vårt galleri online, tänk på oss och ta ett
+                        ögonblick för att verkligen reflektera över vad du ser och vad det betyder.
+                    </p>
+                    
+                    <h3>Kontaktuppgifter</h3>
+                    <address class="about-address">
+                        
+                        <p>Har du frågor, synpunkter eller bara vill skicka ett roligt tips? Hör av dig!</p>
+                        <p class="about-address-title">Bildgalleriet</p>
+                        <p>Konstgatan 5
+                            <br>
+                            123 45 Kreativstad, Sverige
+                        </p>
+                        <p>E-post: <a class="photo-galley-link" href="mailto:info@fajknews.se">info@bildgalleriet.se</a></p>
+                        <p>Telefon: <a class="photo-galley-link" href="tel:+46701234567">+46 (0)70-123 45 67</a></p>
+                    </address>
+
+                    <p>
+                        Har du frågor, synpunkter eller vill du veta mer om våra aktuella utställningar? Tveka inte att kontakta oss!
+                    </p>
+            </section>
+        </main>
+        <footer>
+            <section class="footer-section">
+                <h2 class="footer-text">
+                    All rättigheter tillhör Bildarkivet 
+                    <span class="material-symbols-outlined">copyright</span>
+                    och är fria att använda.
+                </h2>
+            </section>
+            <div id="cookie-consent-terms" class="cookie-container">
+               <p>
+                    Vi spar inget användardata men för GPRs skull behöver du godkänna vår policy! 
+                </p>
+                <a class="accept-cookie-link" target="_blank" href="https://en.wikipedia.org/wiki/Acceptable_use_policy">
+                    Läs mer om policy<span class="material-symbols-outlined open-new-window">open_in_new</span></a>
+                <button id="accept-cookie" class="button-accept">Acceptera</button>
+            </div>
+            <script src="javascript/main.js"></script>
+            <script src="javascript/cookie_consent.js"></script>
+        </footer>
+    </body>
+</html>

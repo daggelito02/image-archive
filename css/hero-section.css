@@ -1,0 +1,43 @@
+.hero {
+    min-height: 2rem;
+    overflow: hidden;
+    position: relative;
+    min-height: 80vh;
+}
+.hero__img {
+    max-height: 40rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    object-position: bottom;
+    overflow: hidden;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+  }
+.hero__wrapper {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.hero__features {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.hero__features-items {
+    margin-top: 2.5rem;
+    width: 34rem;
+}
+
+.hero__header,
+.hero__wellcome-text {
+    padding: 1rem;
+    border: solid 0.0625rem var(--color-main-white);
+    border-radius: 0.625rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}

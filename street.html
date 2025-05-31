@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bildarkivet</title>
+        <link rel="icon" href="./favicon.png" sizes="48x48" type="image/png">
+        <!-- Importerar googles ikon-bibliotek -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+        <link href="https://fonts.cdnfonts.com/css/darkmode-trial" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Skip to main content-länk, finns på alla sidor -->
+        <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+        <header>
+            <div class="logo-container" id="top">
+                <a href="index.html#top">
+                    <img alt="Bildarkivet logotype" src="./assets/logo.png" class="logo">
+                </a>
+            </div>
+            <!-- top -->
+            <nav class="top-menu">
+                <!-- En knapp med hamburger-meny-ikon för compact view, vinns på alla sidor -->
+                <div class="top-menu-button-container">
+                    <button aria-controls="menu" 
+                        aria-expanded="false" 
+                        aria-label="Öppna eller stäng menyn"
+                        class="top-menu-button" id="menu-toggle">
+                        <span id="button-toggle" class="material-symbols-outlined menu">menu</span>
+                        <span class="button-text">Meny</span>
+                    </button>
+                </div>
+                <!-- Meny-länk-panel, finns på alla sidor. Olika style mellan desktopvy och compact view -->
+                <ul class="top-menu-list menu-dropdown" id="menu">
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="index.html">
+                            <span class="material-symbols-outlined home">home</span>
+                            <span class="top-menu-text">Hem</span>
+                        </a>
+                    </li>
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="selection.html">Ett urval</a>                    
+                    </li>
+                    <li class="top-menu-item">
+                        <span class="top-menu-link selected">Street</span>
+                    </li>
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="cities.html">Städer</a>
+                    </li>
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="about.html">Om arkivet</a>
+                    </li>
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="tip.html">Inspiration</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content" class="main-content-area">
+            <section class="photo-grid">
+                <h1 class="header-grid">Street</h1>
+                <a href="./articles/street/who-is-the-man.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/man_and_dog.jpg" alt="Cigarröknande man på med cykel och hund">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2018-09-07T21:30">7 september 2018 | 21:30</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Vad väntar mannen på? Vems är hatten?
+                        </h2>
+                        <p class="photo-article-text">
+                            Skuggorna från gatulamporna spelar över väggen där mannen står och röker, 
+                            hans blick fäst på något osynligt i fjärran. Bakom honom skimrar skyltfönstret med tavlor och konstverk 
+                            – fragment av andras världar, fångade i färg och form.
+                        </p>
+                    </article>
+                </a>
+                <a href="./articles/street/fotograf.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/fotograf.jpg" alt="Dansk fotograf men svart hatt">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2025-04-02T12:01">2 april 2025 | 12:01</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Möte med en annan streetfotograf
+                        </h2>
+                        <p class="photo-article-text">
+                            Ett ögonblick av ömsesidig förståelse. Två fotografer möts i gatans ständiga rörelse, 
+                            bundna av samma passion för att fånga livets flyktiga stunder. 
+                            Är det en slump, eller delar de en osynlig dialog genom sina kameror?
+                        </p>
+                    </article>
+                </a>
+                <a href="./articles/street/rialto.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/rialto.jpg" alt="Rialtobron med folk i siluett">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2020-10-10T19:33">10 oktober 2020 | 19:33</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Vem är flickan på Rialtobron?
+                        </h2>
+                        <p class="photo-article-text">
+                            En mystisk figur fångad på en av Venedigs mest ikoniska broar. Flickans blick verkar söka 
+                            något bortom kanalerna, och hennes närvaro väcker både frågor och fascination. 
+                            Är hon en turist, en lokal invånare – eller kanske något helt annat?
+                        </p>
+                    </article>
+                </a>
+                <a href="./articles/street/girl_cigarette.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/cig_girl.jpg" alt="Fantasifullt sminkad flick tar ett bloss">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2025-04-02T11:45">2 april 2025 | 11:45</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            En paus i stan – ett ögonblick av rå skönhet
+                        </h2>
+                        <div class="photo-article-text">
+                            Hennes ansikte är en målarduk, täckt av skarpa kontraster. Det hårda sminket framhäver 
+                            varje linje och vinkel, som om hon vill förvandla sig själv till en karaktär 
+                            i en berättelse hon ännu inte förstått.
+                        </div>
+                    </article>
+                </a>
+                <a href="./articles/street/giudecca.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/giudecca.jpg" alt="Gatubild med kvinna och Guidecca-venedig i bakgrunden">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2019-08-15T16:08">15 augusti 2019 | 16:08</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Ett brådskande samtal i kanalens skugga
+                        </h2>
+                        <p class="photo-article-text">
+                            Kvinnan längst fram står inte långt ifrån kanalens kant, mobiltelefonen tryckt mot örat. 
+                            Hennes panna är rynkad, rösten darrar lätt när hon hör nyheterna på andra sidan linjen. 
+                            Bakom henne rör sig människor i sin egen värld: en äldre man berättar en historia för 
+                            en nyfiken ung kvinna, ett par håller handen och ler, medan en konstnär skissar 
+                            den tidlösa vy som sträcker sig framför dem.
+                        </p>
+                    </article>
+                </a>
+                <a href="./articles/street/orange_woman.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/orange_lady.jpg" alt="Färgstark kvinna med oranget hår">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2025-04-02T14:55">02 april 2025 | 14:55</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Färgstark mitt i vimlet
+                        </h2>
+                        <p class="photo-article-text">
+                            Mitt i det pulserande gatulivet i Köpenhamn står en kvinna med eldig orangea 
+                            lockar som fångar allas blickar. Hennes klädsel är lika levande som håret 
+                            – en mix av färger och mönster som speglar stadens kreativa och öppna själ. 
+                            Hon rör sig självsäkert bland folkmassan, som om hon äger varje steg hon tar.
+                        </p>
+                    </article>
+                </a>
+            </section>
+        </main>
+        <footer>
+            <section class="footer-section">
+                <h2 class="footer-text">
+                    All rättigheter tillhör Bildarkivet 
+                    <span class="material-symbols-outlined">copyright</span>
+                    och är fria att använda.
+                </h2>
+            </section>
+            <div id="cookie-consent-terms" class="cookie-container">
+                <p>
+                    Vi spar inget användardata men för GPRs skull behöver du godkänna vår policy! 
+                </p>
+                <a class="accept-cookie-link" target="_blank" href="https://en.wikipedia.org/wiki/Acceptable_use_policy">
+                    Läs mer om policy<span class="material-symbols-outlined open-new-window">open_in_new</span></a>
+                <button id="accept-cookie" class="button-accept">Acceptera</button>
+            </div>
+            <script src="javascript/main.js"></script>
+            <script src="javascript/cookie_consent.js"></script>
+        </footer>
+    </body>
+</html>

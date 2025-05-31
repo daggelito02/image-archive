@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bildarkivet</title>
+        <link rel="icon" href="./favicon.png" sizes="48x48" type="image/png">
+        <!-- Importerar googles ikon-bibliotek -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+        <link href="https://fonts.cdnfonts.com/css/darkmode-trial" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Skip to main content-länk, finns på alla sidor -->
+        <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+        <header>
+            <!-- Id och #top på url är för att skärmläsare inte ska tycke det är en redundant länk -->
+            <div class="logo-container" id="top">
+                <a href="index.html#top">
+                    <img alt="Bildarkivet logotype" src="./assets/logo.png" class="logo">
+                </a>
+            </div>
+            <!-- top -->
+            <nav class="top-menu">
+                <!-- En knapp med hamburger-meny-ikon för compact view, vinns på alla sidor -->
+                <div class="top-menu-button-container">
+                    <button aria-controls="menu" 
+                        aria-expanded="false" 
+                        aria-label="Öppna eller stäng menyn"
+                        class="top-menu-button" id="menu-toggle">
+                        <span id="button-toggle" class="material-symbols-outlined menu">menu</span>
+                        <span class="button-text">Meny</span>
+                    </button>
+                </div>
+                <!-- Meny-länk-panel, finns på alla sidor. Olika style mellan desktopvy och compact view -->
+                <ul class="top-menu-list menu-dropdown" id="menu">
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="index.html">
+                            <span class="material-symbols-outlined home">home</span>
+                            <span class="top-menu-text">Hem</span>
+                        </a>
+                    </li>
+                    <li class="top-menu-item">
+                        <span class="top-menu-link selected">Ett urval</span>                    
+                  </li>
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="street.html">Street</a>
+                    </li>
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="cities.html">Städer</a>
+                    </li>
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="about.html">Om arkivet</a>
+                    </li>
+                    <li class="top-menu-item">
+                        <a class="top-menu-link" href="tip.html">Inspiration</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content" class="main-content-area">
+            <section class="photo-grid">
+                <h1 class="header-grid">Ett urval</h1>
+                <a href="./articles/cities/stefansdommen.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/stefansdomen.jpg" alt="Taket med fösnster på domen">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2024-12-02T15:30">2 december 2024 | 15:30</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Mönster på Stefansdomen!
+                        </h2>
+                        <p class="photo-article-text">
+                            Den magnifika Stefansdomen i Wien är inte bara känd för sin arkitektur utan även för sitt unika takmönster. 
+                            Taket är täckt av över 230 000 glaserade takpannor som bildar färgstarka geometriska mönster och symboler, 
+                            inklusive det österrikiska örnemblemet. Detta konstverk 
+                            är en hyllning till både gotisk design och nationell stolthet och lockar besökare från hela världen.
+                        </p>
+                    </article>
+                </a>
+                <a href="./articles/street/fotograf.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/fotograf.jpg" alt="Dansk fotograf men svart hatt">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2025-04-02T12:01">2 april 2025 | 12:01</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Möte med en annan streetfotograf
+                        </h2>
+                        <p class="photo-article-text">
+                            Ett ögonblick av ömsesidig förståelse. Två fotografer möts i gatans ständiga rörelse, 
+                            bundna av samma passion för att fånga livets flyktiga stunder. 
+                            Är det en slump, eller delar de en osynlig dialog genom sina kameror?
+                        </p>
+                    </article>
+                </a>
+                <a href="./articles/street/rialto.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/rialto.jpg" alt="Rialtobron med folk i siluett">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2020-10-10T19:33">10 oktober 2020 | 19:33</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Vem är flickan på Rialtobron?
+                        </h2>
+                        <p class="photo-article-text">
+                            En mystisk figur fångad på en av Venedigs mest ikoniska broar. Flickans blick verkar söka 
+                            något bortom kanalerna, och hennes närvaro väcker både frågor och fascination. 
+                            Är hon en turist, en lokal invånare – eller kanske något helt annat?
+                        </p>
+                    </article>
+                </a>
+                <a href="./articles/cities/gdansk.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/gdansk.jpg" alt="Stadsbild över många av Gdansk alla torn">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2024-06-18T11:14">18 juni 2024 | 11:14</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Gdańsks höga torn samlade i en siluett
+                        </h2>
+                        <div class="photo-article-text">
+                            Mot den polska himlen reser sig Gdańsks torn i en elegant siluett – 
+                            från Mariakyrkans majestätiska spets till stadshusets ikoniska topp. 
+                            Varje torn berättar en historia om stadens rika historia och tidlösa skönhet, 
+                            förenade i en horisont som fångar andan av både dåtid och nutid.
+                        </div>
+                    </article>
+                </a>
+                <a href="./articles/cities/gdansk_crane.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/crane.jpg" alt="En stor rostig hamnkran">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2024-06-18T13:25">18 juni 2024 | 13:25</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Övergivet men ändå vackert – kran i hamnen
+                        </h2>
+                        <p class="photo-article-text">
+                            Den står ensam, en kvarleva från en annan tid, med rost som berättar historier om arbete och slit. 
+                            Trots sin övergivenhet bär hamnkranen en tidlös skönhet – en symbol för stadens industriella
+                            arv och människans förmåga att skapa det som består, även när funktion blir till historia.
+                        </p>
+                    </article>
+                </a>
+                <a href="./articles/cities/lisboa.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/lisboa.jpg" alt="Lutande spårvangn, på väg uppåt">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2025-02-19T18:55">19 februari 2025 | 18:55</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Lissabons lutande spårvagnar
+                        </h2>
+                        <p class="photo-article-text">
+                            "De charmiga, lutande spårvagnarna i Lissabon slingrar sig genom stadens historiska gator, 
+                            där varje sväng bjuder på en ny vy av den pittoreska staden och dess kullar."
+                        </p>
+                    </article>
+                </a>
+                <a href="./articles/cities/hotel.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/hotel.jpg" alt="Hotel Belvédère i schweiziska alperna">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2023-10-16T14:33">16 oktober 2023 | 14:33</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Accidentally Wes Anderson och Hotel Belvédère
+                        </h2>
+                        <p class="photo-article-text">
+                            "Hotel Belvédère, beläget vid Furkapasset i Schweiz, är en verklig ikon för stil och nostalgi, 
+                            perfekt för den som älskar den unika estetiken från Accidentally Wes Anderson. Med sin symmetri, 
+                            dämpade färgpalett och tidlösa arkitektur ser hotellet ut att vara taget direkt 
+                            från en av Wes Andersons filmvärldar.
+                        </p>
+                    </article>
+                </a>
+                <a href="./articles/cities/kopenhaven.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/nyhavn.jpg" alt="Vy över Nyhavn Köpenhamn">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2025-04-02T19:47">2 april 2025 | 19:47</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Kvällslugnet lägger sig över Nyhavn
+                        </h2>
+                        <p class="photo-article-text">
+                            När solen sakta sjunker bakom Köpenhamns skyline och ljusen från de färgglada husen vid
+                            Nyhavn börjar spegla sig i det stilla vattnet, infinner sig en magisk stämning. 
+                            Det hektiska sorlet från dagens besökare ersätts av ett lugn som bjuder in till eftertanke och njutning.
+                        </p>
+                    </article>
+                </a>
+                <a href="./articles/cities/venice.html" class="photo-article-link">
+                    <article class="photo-article">
+                        <figure class="photo-article-image">
+                            <img src="images/grid-thumbnails/venice_bird.jpg" alt="Siluettbild med takåsar och flygande duva">
+                        </figure>
+                        <div class="photo-article-datetime">
+                            <time datetime="2022-09-25T19:27">25 septembeer 2022 | 19:270</time>
+                        </div>
+                        <h2 class="photo-article-header">
+                            Kvällssiluett i skymningen över Venedig
+                        </h2>
+                        <p class="photo-article-text">
+                            I Dorsoduro, en av Venedigs mest tidlösa stadsdelar, vilar staden i ett blågrått skymningsljus. 
+                            Himlen över takåsarna bär spår av dagen som passerat – en djup, dämpad ton mellan mörker och ljus.
+                        </p>
+                    </article>
+                </a>
+            </section>
+        </main>
+        <footer>
+            <section class="footer-section">
+                <h2 class="footer-text">
+                    All rättigheter tillhör Bildarkivet 
+                    <span class="material-symbols-outlined">copyright</span>
+                    och är fria att använda.
+                </h2>
+            </section>
+            <div id="cookie-consent-terms" class="cookie-container">
+               <p>
+                    Vi spar inget användardata men för GPRs skull behöver du godkänna vår policy! 
+                </p>
+                <a class="accept-cookie-link" target="_blank" href="https://en.wikipedia.org/wiki/Acceptable_use_policy">
+                    Läs mer om policy<span class="material-symbols-outlined open-new-window">open_in_new</span></a>
+                <button id="accept-cookie" class="button-accept">Acceptera</button>
+            </div>
+            <script src="javascript/main.js"></script>
+            <script src="javascript/cookie_consent.js"></script>
+        </footer>
+    </body>
+</html>
