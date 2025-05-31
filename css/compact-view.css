@@ -155,6 +155,9 @@
         padding-top: .5rem;
         padding-bottom: .5rem;
     }
+    .hero {
+        min-height: 100vh;
+    }
 }
 @media (max-width: 24.375rem) {
     .logo-container, .main-content-area, .top-menu-list, .hero__features-items {
@@ -195,8 +198,5 @@
         margin-top: 1.5rem;
         font-size: 0.875rem;
         overflow: scroll;
-    }
-    .hero {
-        min-height: 100vh;
     }
 }
