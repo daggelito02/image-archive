@@ -17,6 +17,7 @@
     color: var(--color-base-font); 
     font-weight: 600;
     position: relative;
+    font-size: 1rem!important;
 }
 .top-menu-link:hover {
     background-color: var(--color-link-hover);
@@ -52,7 +53,8 @@
 }
 .material-symbols-outlined.home {
     color: var(--color-main-white);
-    font-size: 1.3rem;
+    font-size: 1.35rem;
+    font-weight: 600;
     position: absolute;
     top: 0.6875rem;
     left: 0.25rem;

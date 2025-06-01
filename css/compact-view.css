@@ -15,7 +15,7 @@
         margin-left: calc(1rem - 1rem - var(--frame-margin-or-padding-upto-768));
     }
     .top-menu-button-container {
-        padding-left: calc(var(--frame-margin-or-padding-upto-768) - .55rem);
+        padding-left: calc(var(--frame-margin-or-padding-upto-768) - .3rem);
     }
     .top-menu-button {
         background-color: var(--color-main-background);
@@ -46,7 +46,7 @@
         font-size: 2rem;
         color: var(--color-base-font);
         padding: 0;
-        right: 0;
+        right: .3rem;
         top: 0.25rem;
     }
     .top-menu-item {
@@ -129,11 +129,11 @@
     .material-symbols-outlined.home {
         text-decoration: none;
         top: 0.5625rem;
-        left: 0.3125rem;
+        left: 0.25rem;
     }
     .selected .material-symbols-outlined.home {
-        top: 0.5rem;
-        left: 0.9375rem;
+        top: 0.51rem;
+        left: 0.6rem;
         background-color: unset;
         color: var(--color-base-font-outgreyed);
     }
@@ -177,8 +177,11 @@
         /* För att minus ska fungera framför variablen */
         margin-left: calc(1rem - 1rem - var(--frame-margin-or-padding-upto-390));
     }
+    .top-menu-item:nth-child(5) {
+        margin: 0 calc(1rem - .6rem - var(--frame-margin-or-padding-upto-768));
+    }
     .top-menu-button-container {
-        padding-left: calc(var(--frame-margin-or-padding-upto-390) - .55rem);
+        padding-left: calc(var(--frame-margin-or-padding-upto-390) - .35rem);
     }
     .top-menu-item {
         border-bottom: 0.0625rem solid var(--color-border);
@@ -186,17 +189,24 @@
         margin: 0 calc(1rem - 1rem - var(--frame-margin-or-padding-upto-390)); 
         padding-left: calc(var(--frame-margin-or-padding-upto-390) - 0.25rem);
     }
+    .material-symbols-outlined.menu {
+
+        right: .25rem;
+
+    }
     .top-menu-link.selected, 
     .top-menu-link.selected:hover {
         margin: 0 calc(1.25rem - 1rem - var(--frame-margin-or-padding-upto-390));
         padding-left: calc(var(--frame-margin-or-padding-upto-390) - 0.125rem);
     }
     .selected .material-symbols-outlined.home {
-        left: 0.5rem;
+        left: 0.2rem;
+    }
+    .selected .top-menu-text {
+        padding-left: 1.6rem;
     }
     .hero__features-items {
         margin-top: 1.5rem;
         font-size: 0.875rem;
-        overflow: scroll;
     }
 }

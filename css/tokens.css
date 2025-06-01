@@ -35,6 +35,6 @@
     --photo-page-article-h2-font-size: 1.5rem;
 
     /* Margin and padding units */
-    --frame-margin-or-padding-upto-768: 1.5rem;
-    --frame-margin-or-padding-upto-390: 1rem;
+    --frame-margin-or-padding-upto-768: 1.2rem;
+    --frame-margin-or-padding-upto-390: .8rem;
 }
