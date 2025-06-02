@@ -14,7 +14,7 @@
     </head>
     <body>
         <!-- Skip to main content-länk, finns på alla sidor -->
-        <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+        <a href="#main-content" id="skip-link" class="skip-link">Hoppa till huvudinnehåll</a>
         <header>
             <div class="logo-container" id="top">
                 <a href="index.html#top">
@@ -159,6 +159,10 @@
             </div>
             <script src="javascript/main.js"></script>
             <script src="javascript/cookie_consent.js"></script>
+            <script>
+                // Kompensera för base href
+                document.getElementById('skip-link').setAttribute('href', window.location.pathname + '#main-content');
+            </script>
         </footer>
     </body>
 </html>

@@ -33,7 +33,9 @@
     margin-top: 2.5rem;
     width: 34rem;
 }
-
+.hero__header {
+    text-align: center;
+}
 .hero__header,
 .hero__wellcome-text {
     padding: 1rem;
