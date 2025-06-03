@@ -56,7 +56,7 @@
     font-size: 1.35rem;
     font-weight: 600;
     position: absolute;
-    top: 0.6875rem;
+    top: 0.5875rem;
     left: 0.25rem;
     z-index: 0;
 }
@@ -71,6 +71,8 @@
 .selected .material-symbols-outlined.home {
     color: var(--color-main-white);
     background: var(--color-link-selected-background);
+    left: .2rem
+
 }
 .top-menu-link.selected:hover .material-symbols-outlined.home {
     color: var(--color-main-white);
